@@ -1,0 +1,77 @@
+
+<!-- <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="filterTrainSingle($event)"></p-autoComplete> -->
+
+
+<div class="container-fluid" style="margin-top: 1%; margin-bottom: 5%;">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="tab">
+                        <button class="tablinks active" onclick="openCity(event, 'one')" id="defaultOpen">Live Train Status</button>
+                        <button class="tablinks" onclick="openCity(event, 'two')">PNR Status</button>
+                        <button class="tablinks" onclick="openCity(event, 'three')">Train Route</button>
+                        <button class="tablinks" onclick="openCity(event, 'three')">Seat availability</button>
+                        <button class="tablinks" onclick="openCity(event, 'four')">Train Between Stations</button>
+                        <button class="tablinks" onclick="openCity(event, 'five')">Train Name/Number</button>
+                        <button class="tablinks" onclick="openCity(event, 'six')">Train Fare Enquiry</button>
+                        <button class="tablinks" onclick="openCity(event, 'seven')">Train Arrivals</button>
+                        <button class="tablinks" onclick="openCity(event, 'eight')">Cancelled Trains</button>
+                        <button class="tablinks" onclick="openCity(event, 'nine')">Rescheduled Trains</button>
+                        <button class="tablinks" onclick="openCity(event, 'ten')">Station Name to Code</button>
+                        <button class="tablinks" onclick="openCity(event, 'eleven')">Station Code to Name</button>
+                      </div>
+                      
+                      <div id="one" class="tabcontent">
+                        <h3>Get Live running status of Train.</h3>
+                        <label for="typeahead-basic">Search for a state:</label>
+                        <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search"/>
+                        <hr>
+                        <pre>Model: {{ model | json }}</pre>
+                      </div>
+                      
+                      <div id="two" class="tabcontent">
+                        <h3>Get PNR status details.</h3>
+                        
+                      </div>
+                      
+                      <div id="three" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="four" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="five" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="six" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="seven" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="eight" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="nine" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="ten" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+                      <div id="eleven" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                      </div>
+
+        </div>
+
+    </div>
+  
+</div>
